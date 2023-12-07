@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    border: 0;
+}
+.nav-bar {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 50px;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+h1{
+    font-size: 50px;
+    font-weight: 50px;
+}
+.addbook{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 45%;
+    font-weight: 50px;
+}
+.logbtn{
+   border-radius: 10px;
+   padding: 10px;
+   font-weight: 600px;
+}
