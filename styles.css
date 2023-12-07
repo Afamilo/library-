@@ -2,6 +2,9 @@
     margin: 0;
     border: 0;
 }
+body{
+    background-color: aliceblue;
+}
 .nav-bar {
     display: flex;
     align-content: center;
@@ -11,19 +14,64 @@
     margin-bottom: 50px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-h1{
+.nav-bar h1{
     font-size: 50px;
     font-weight: 50px;
 }
 .addbook{
+    width: max-content;
     display: flex;
     align-items: center;
     gap: 10px;
     margin-left: 45%;
-    font-weight: 50px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.addbook:hover{
+    background-color: gainsboro;
+    border: none;
+    border-radius: 10px;
+    
 }
 .logbtn{
    border-radius: 10px;
    padding: 10px;
    font-weight: 600px;
 }
+.container{
+    width: 300px;
+    text-align: center;
+    background-color: gray;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 45%;
+}
+form{
+    
+}
+.container h1{
+    margin-bottom: 10px;
+}
+form input, .btn{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: inherit;
+    font-family: 30opx;
+    font-size: 20px;
+    outline: none;
+    display: block;
+    margin-bottom: 15px;
+}
+.btn{
+    font-weight: 600;
+}
+.is-read label{
+    font-size: large;
+    font-weight: 600;
+}
+.checkbox{
+    font-size: 200px;
+} 
