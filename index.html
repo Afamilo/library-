@@ -8,22 +8,23 @@
     <title>Library</title>
 </head>
 <body>
-    <nav class="nave-bar">
-        <h1>library</h1>
-        <button class="btn" id="logbtn">Log in</button>
+    <nav class="nav-bar">
+        <h1>Library</h1>
+        <button class="logbtn" id="logbtn">Log in</button>
     </nav>
     <div class="addbook">
-        <i class="fa-solid fa-plus"></i>
-        <h2>Add book</h2>
+        <button type="button" class="addBook-btn">+ Add book</button>
+        <div class="books-grid" id="books-grid"></div>
     </div>
     <div class="container">
+            <h1>Add new book</h1>
         <form>
             <input type="text" id="title" placeholder="Title"/>
             <input type="text" id="Author" placeholder="Author"/>
             <input type="text" id="page" placeholder="Page"/>
             <div class="is-read">
                <label for="is-read">Have you read it?</label>
-               <input type="checkbox" type="checkbox" id="isRead"/>
+               <input type="checkbox" class="checkbox" id="isRead"/>
            </div>
            <button class="btn" type="submit">Submit</button>
        </form>
