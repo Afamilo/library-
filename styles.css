@@ -4,6 +4,7 @@
 }
 body{
     background-color: aliceblue;
+    position: relative;
 }
 .nav-bar {
     display: flex;
@@ -18,37 +19,56 @@ body{
     font-size: 50px;
     font-weight: 50px;
 }
+.logbtn{
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 600px;
+    cursor: pointer;
+} 
 .addbook{
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: max-content;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: 45%;
     font-weight: 300;
     margin-bottom: 10px;
     padding: 10px;
 }
-.addbook:hover{
-    background-color: gainsboro;
+.addBook-btn{
+    font-size: 25px;
+    font-family: 600;
+    cursor: pointer;
+}
+.addBook-btn:hover{
+    background-color: black;
+    color: white;
     border: none;
     border-radius: 10px;
     
 }
-.logbtn{
-   border-radius: 10px;
-   padding: 10px;
-   font-weight: 600px;
+.book-grid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
 }
 .container{
+    position:relative;
+    top: 50%;
+    left: 50%;
     width: 300px;
     text-align: center;
     background-color: gray;
     padding: 20px;
     border-radius: 10px;
-    margin-left: 45%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+    box-shadow: #e3c3c3c9 0px 1px 4px;
 }
-form{
-    
+.container.active {
+    transform:translate(-50%, -50%) scale(1) ;
 }
 .container h1{
     margin-bottom: 10px;
